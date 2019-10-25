@@ -8,41 +8,10 @@
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                     </div>
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                      <h2 class="head-title lg-line">S'INSCRIRE</h2>                      
+                  </div> 
                   </div>
-            </div>
-
-
-            <!--<form class="form-horizontal" action="/action_page.php">
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Username:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="nom" placeholder="Enter username">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Adresse:</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="adresse" placeholder="Enter adresse">
-                </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label col-sm-2" for="email">Tel:</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="tel" placeholder="Enter telephone number">
-                  </div>
-                </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Password:</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-              </div>
-            </form>-->
             
            <form [formGroup]="inscritsaveform">
                         
@@ -50,19 +19,21 @@
                                 <input type="text" formControlName="username" class="form-control" placeholder="username">
                               </div>
                                 <div class="form-group">
-                                  <input type="email" formControlName="Adresse" class="form-control" placeholder="Adresse">                                
+                                  <input type="text" formControlName="adresse" class="form-control" placeholder="Adresse">                                
                                 </div>
                                   <div class="form-group">
                                 <input type="text"  formControlName="tel" class="form-control" placeholder="tel">
                               </div>
+                              <div class="form-group">
+                                <input type="email"  formControlName="email" class="form-control" placeholder="email">
+                              </div>
                                 <div class="form-group">
-
                                 <input type="password"  formControlName="password" class="form-control" placeholder="password">
                               </div>
                               <div class="button">
                                 <input type="submit" (click)="saveinscrit()" value="Inscription">
                               </div>
                     </form>
-                  
+                  </div> 
 </div>
 </div>

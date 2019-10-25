@@ -10,12 +10,13 @@
       </div>
 </div>
 <div class="container">
-    <form [formGroup]="messageForm">                  
+  
+   <form [formGroup]="messageForm">                  
         <div class="form-group">
               <input type="text" formControlName="username" class="form-control" placeholder="username">
             </div>
               <div class="form-group">
-                <input type="email" formControlName="adresse" class="form-control" placeholder="Adresse">                                
+                <input type="email" formControlName="adresse" class="form-control" placeholder="adresse">                                
               </div>
                 <div class="form-group">
               <input type="text"  formControlName="tel" class="form-control" placeholder="tel">
@@ -40,15 +41,17 @@
                         </div>
                       </div>
 
-              </form>  
-              <form>
+                      <div class="form-group">
+
                 Date <input type="date" name="bday">
                 <input type="submit">
-              </form>
+              </div>
+
     <div class="form-group">
         <label for="comment">Comment:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
+        <textarea class="form-control" rows="5" ></textarea>
       </div>
+    </form>  
 
 </div>
 

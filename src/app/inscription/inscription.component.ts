@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{InscritService } from './inscrit.service';
 import{FormGroup, FormControl, Validators} from '@angular/forms';
-import { from } from 'rxjs';
 @Component({
   selector: 'app-inscription',
   templateUrl: './inscription.component.html',
@@ -16,16 +15,19 @@ export class InscriptionComponent implements OnInit {
     this.submitted=false;  
     this.inscritsaveform=new FormGroup({  
       username:new FormControl('' , [Validators.required , Validators.minLength(5) ] ),  
-      Adresse:new FormControl('' , [Validators.required , Validators.minLength(5) ] ),  
+      adresse:new FormControl('' , [Validators.required , Validators.minLength(5) ] ),  
       tel:new FormControl('' , [Validators.required , Validators.minLength(8) ] ),  
-      password:new FormControl('' , [Validators.required , Validators.minLength(8) ] ),  
+      email:new FormControl('' , [Validators.required , Validators.minLength(8) ] ),  
+      password:new FormControl('' , [Validators.required , Validators.minLength(5) ] ),  
     }); 
   }  
   
   saveinscrit(){  
     this.service.saveinscrit(this.inscritsaveform.value).subscribe(reponse => {
-      console.log(reponse);
+     console.log(reponse);
     })
+    this.inscritsaveform=null;
     this.submitted = true;  
+    alert("INSCRIPTION ");
   }  
 }

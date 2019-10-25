@@ -8,8 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ContactComponent } from './contact/contact.component';
-import { TestComponent } from './test/test.component';
-import {from} from'rxjs';
 import { DashclientComponent } from './dashclient/dashclient.component';
 import { ConnexionclientComponent } from './connexionclient/connexionclient.component';
 import { InscriptionComponent } from './inscription/inscription.component';
@@ -21,7 +19,6 @@ import { InscriptionComponent } from './inscription/inscription.component';
     ServicesComponent,
     ConnexionComponent,
     ContactComponent,
-    TestComponent,
 
     DashclientComponent,
     ConnexionclientComponent,
